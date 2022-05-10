@@ -1,17 +1,31 @@
-const calc = require('./file');
-
-const add = function (a, b)
-{
-    num[a].click();
-    add.click();
-    num[b].click();
-    return result[0].textContent = +digit1 + +digit2;
-}
+const calc = require('./file.js');
 
 describe('adding', function ()
 {
-    test('Equals 250', function ()
+    test('Equals 6', function ()
     {
-        expect(add(100, 150)).toEqual(250);
+        expect(adding(1, 5)).toEqual(6);
     });
 });
+
+const adding = function (a, b)
+{
+    for (i = 0; i < num.length - 1; i++)
+    {
+        if (num[i].textContent == a)
+        {
+            num[i].click();
+            continue;
+        }
+    }
+    add[0].click();
+    for (i = 0; i < num.length - 1; i++)
+    {
+        if (num[i].textContent == b)
+        {
+            num[i].click();
+            continue;
+        }
+    }
+    return +digit1 + +digit2;
+}
