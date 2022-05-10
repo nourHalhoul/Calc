@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "file.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,12 @@
   "dependencies": {
     "@actions/core": "^1.8.0",
     "@actions/github": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   }
 }
