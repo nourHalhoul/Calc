@@ -47,3 +47,4 @@ let digit2 = 0;
 //comment
 //comment
 //comment
+//comment
