@@ -43,3 +43,5 @@ clear.addEventListener('click', () => { flip = ''; result[0].textContent = 0; di
 let flip;
 let digit1 = 0;
 let digit2 = 0;
+
+//comment
