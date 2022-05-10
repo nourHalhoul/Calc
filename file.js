@@ -45,3 +45,5 @@ let digit1 = 0;
 let digit2 = 0;
 
 //comment
+
+//comment
