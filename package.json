@@ -1,9 +1,10 @@
 {
   "name": "calc",
   "version": "1.0.0",
+  "description": "",
   "main": "file.js",
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,17 +16,5 @@
   "bugs": {
     "url": "https://github.com/nourHalhoul/Calc/issues"
   },
-  "homepage": "https://github.com/nourHalhoul/Calc#readme",
-  "description": "",
-  "dependencies": {
-    "@actions/core": "^1.8.0",
-    "@actions/github": "^5.0.1"
-  },
-  "devDependencies": {
-    "jest": "^28.1.0",
-    "jest-environment-jsdom": "^28.1.0"
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
-  }
+  "homepage": "https://github.com/nourHalhoul/Calc#readme"
 }
