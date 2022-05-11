@@ -1,50 +1,21 @@
-const num = document.querySelectorAll('#number');
-const result = document.getElementsByClassName('result');
-for (let i = 0; i < num.length - 1; i++)
+const equals = function (a, b, c)
 {
-    num[i].addEventListener('click', () => { if (result[0].textContent == 0) { result[0].textContent = ''; }; result[0].textContent += num[i].textContent });
-};
-
-const add = document.getElementsByClassName('add');
-const subtract = document.getElementsByClassName('subtract');
-const multiply = document.getElementsByClassName('multiply');
-const divide = document.getElementsByClassName('divide');
-
-add[0].addEventListener('click', () => { digit1 = result[0].textContent; result[0].textContent = 0; flip = add; });
-subtract[0].addEventListener('click', () => { digit1 = result[0].textContent; result[0].textContent = 0; flip = subtract; });
-multiply[0].addEventListener('click', () => { digit1 = result[0].textContent; result[0].textContent = 0; flip = multiply; });
-divide[0].addEventListener('click', () => { digit1 = result[0].textContent; result[0].textContent = 0; flip = divide; });
-
-num[num.length - 1].addEventListener('click', () =>
-{
-    digit2 = result[0].textContent;
-    if (flip === add)
+    if (c === "add")
     {
-        result[0].textContent = +digit1 + +digit2;
+        return +a + +b;
     }
-    else if (flip === subtract)
+    else if (c === "subtract")
     {
-        result[0].textContent = +digit1 - +digit2;
+        return +a - +b;
     }
-    else if (flip === multiply)
+    else if (c === "multiply")
     {
-        result[0].textContent = +digit1 * +digit2;
+        return +a * +b;
     }
-    else if (flip === divide)
+    else if (c === "divide")
     {
-        result[0].textContent = +digit1 / +digit2;
+        return +a / +b;
     }
-});
+}
 
-const clear = document.querySelector('#numberClear');
-clear.addEventListener('click', () => { flip = ''; result[0].textContent = 0; digit1 = 0; digit2 = 0; });
-
-
-let flip;
-let digit1 = 0;
-let digit2 = 0;
-
-//comment
-//comment
-//comment
-//comment
+module.exports = equals;
