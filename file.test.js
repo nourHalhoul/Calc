@@ -1,4 +1,4 @@
-const equals = require('./file');
+const functions = require('./file');
 // const jsdom = require("jsdom");
 // const { JSDOM } = jsdom;
 // global.document = jsdom.jsdom('<!doctype html><html><body></body></html>');
@@ -8,6 +8,6 @@ describe('adding', function ()
 {
     test('Equals 6', function ()
     {
-        expect(equals(1, 5, "add")).toEqual(6);
+        expect(functions.equals(1, 5, "add")).toEqual(6);
     });
 });

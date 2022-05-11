@@ -18,4 +18,7 @@ const equals = function (a, b, c)
     }
 }
 
-module.exports = equals;
+module.exports =
+{
+    equals,
+};
